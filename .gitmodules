@@ -1,3 +1,6 @@
 [submodule "Cinder"]
 	path = CinderConwayCamera/Cinder
 	url = https://github.com/cinder/Cinder.git
+[submodule "CinderConwayCamera/Cinder"]
+	path = CinderConwayCamera/Cinder
+	url = https://github.com/cinder/Cinder.git
