@@ -1,0 +1,66 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Xcode Noise
+*~.nib
+*.pbxuser
+*.perspective
+*.perspectivev3
+*.mode1v3
+*.mode2v3
+*.xcworkspace
+*.xcuserdata
+xcuserdata/
+build/
+
+#VS2015 Noise
+*.suo
+*.ncb
+*.sdf
+*log
+*.vsp
+*.vspss
+*.vsps
+*.vspx
+*.psess
+*.opensdf
+*.VC.opendb
+*.VC.db
+Debug/
+Release/
+Debug_Standalone/
+Release_Standalone
+ipch/
+x64/
+x86/
+.vs/
