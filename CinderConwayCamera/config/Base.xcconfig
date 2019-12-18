@@ -1,0 +1,47 @@
+//
+//  Base.xcconfig
+//
+//  Created by Stephen Varga on 1/15/15.
+//  Adapted by Tamar Ziv on 11/24/15.
+//  Updated by Tamar Ziv on 12/18/19.
+//
+//
+
+// Cinder 0.9 is 64 bit
+ARCHS = x86_64
+SDKROOT = macosx
+
+CLANG_CXX_LANGUAGE_STANDARD = c++11
+CLANG_CXX_LIBRARY = libc++
+
+//  Directories
+CINDER_PATH     = ../Cinder
+CINDER_LIB		= $(CINDER_PATH)/lib/macosx
+
+BASE_LIBRARIES_64  = $(CINDER_LIB)
+
+// Makes sure boost links correctly
+ALWAYS_SEARCH_USER_PATHS = YES
+
+//  Headers
+HEADER_SEARCH_PATHS = $(CINDER_PATH)/include
+
+//  Flags
+OTHER_CFLAGS = -D_WEBSOCKETPP_CPP11_STL_
+
+//  Build to Bin
+BIN = $(PROJECT_DIR)/../bin
+PRODUCT_DIR = $(BIN)/$(PRODUCT_NAME)
+
+//	If set to yes, will build a symlink to the product
+DEPLOYMENT_LOCATION = NO
+DSTROOT = $(BIN)
+
+//	Define product build location
+BUILD_PRODUCTS_DIR = $(PRODUCT_DIR)
+CONFIGURATION_BUILD_DIR = $(PRODUCT_DIR)
+INSTALL_PATH = /$(PRODUCT_DIR)
+
+
+
+

@@ -1,0 +1,13 @@
+//
+//  Release.xcconfig
+//
+//
+//
+
+#include "Base.xcconfig"
+
+LIBRARY_SEARCH_PATHS = $(BASE_LIBRARIES_64) $(CINDER_LIB)/Release
+OTHER_LDFLAGS = -lcinder $(LIBRARIES_CMD)
+
+
+

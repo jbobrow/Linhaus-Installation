@@ -1,0 +1,10 @@
+//
+//  Debug.xcconfig
+//  MOTB
+//
+//
+
+#include "Base.xcconfig"
+
+LIBRARY_SEARCH_PATHS = $(BASE_LIBRARIES_64) $(CINDER_LIB)/Debug
+OTHER_LDFLAGS = -lcinder -lboost_filesystem $(LIBRARIES_CMD)
